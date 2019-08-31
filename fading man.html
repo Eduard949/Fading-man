@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<style type="text/css">
+			img{
+				width: 200px;
+			}
+		</style>
+		<img id="person" src="stickman-304969_640.jpg">
+
+
+		<div id="click">click</div>
+
+		<script type="text/javascript">
+				$("#click").click(function(){
+				$("#person")
+					.css('margin-left', '0px')
+					.fadeOut(2000, function(){
+						$("#person")
+							.css('margin-left', '200px')
+							.fadeIn(2000, function(){
+								$("#person")
+									.css('margin-left', '400px')
+									.fadeOut(2000, function(){
+										$("#person")
+											.css('margin-left', '600px')
+											.fadeIn(2000, function(){
+												$("#person")
+													.css('margin-left', '800px')
+													.fadeOut(2000, function(){
+														$("#person")
+															.css('margin-left', '1000px')
+															.fadeIn(2000, function(){
+																$("#person")
+																	.css('margin-left', '1200px')
+																	.fadeOut(2000, function(){
+																		$("#person")
+																			.css('margin-left', '1400px')
+																			.fadeIn(2000, function(){
+																			});
+																	});
+															});
+
+													});
+											});
+
+									});
+							});
+
+					});
+			});
+
+		</script>
+	</body>
+</html>
